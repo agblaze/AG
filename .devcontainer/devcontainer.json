@@ -1,4 +1,17 @@
-// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+{
+    "name": "Abdullah Ejaz",
+    "image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:0-14",
+    "hostRequirements": {
+        "cpus": 2
+    },
+    "waitFor": "onCreateCommand",
+    "settings": { 
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "extensions": ["dbaeumer.vscode-eslint"],
+    "forwardPorts": [3000],
+    "postCreateCommand": "npm install"
+}// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
 // https://github.com/devcontainers/images/tree/main/src/javascript-node
 {
   "name": "JavaScript Portfolio Site with GitHub Codespaces",
